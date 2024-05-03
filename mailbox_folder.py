@@ -43,7 +43,7 @@ if __name__ == '__main__':
         logger.info(f'Processing {x}...')
 
         infile = os.path.join(cfg['profile_dir'], x)
-        outfile = os.path.join('data', x)
+        outfile = os.path.join('data', 'raw', x)
         outdir = os.path.dirname(outfile)
         if not os.path.exists(outdir):
             os.makedirs(outdir, exist_ok=False)
