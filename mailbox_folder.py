@@ -3,8 +3,10 @@ import os
 import pickle as pkl
 import yaml
 import logging
-logger = logging.getLogger(__name__)
+import sys
 
+logger = logging.getLogger(__name__)
+logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 
 class mbox_folder:
     """
