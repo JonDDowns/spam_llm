@@ -1,3 +1,11 @@
+"""
+File: mbox_to_pickle.py
+Author: Jon Downs
+Date: 5/24/2024
+Description: Starts at a Thunderbird profile Mail inbox and parses all mailboxes specified
+             by the user via config.yaml.
+"""
+
 import yaml
 from spam_llm.mailbox_folder import mbox_folder
 import logging

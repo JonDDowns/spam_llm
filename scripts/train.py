@@ -1,3 +1,10 @@
+"""
+File: train.py
+Author: Jon Downs
+Date: 5/24/2024
+Description: Training script for the spam_llm model. Relies heavily on settings in config.yaml
+"""
+
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, DataCollatorWithPadding, TrainingArguments, Trainer
 import logging, sys
 import pickle as pkl

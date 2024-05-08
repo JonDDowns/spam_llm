@@ -6,6 +6,6 @@ Description: This sets up the supporting library for the spam_llm project.
 """
 
 from spam_llm import mailbox_folder
-from spam_llm import compute_metrics
+from spam_llm.compute_metrics import compute_metrics
 import logging
 logging.getLogger(__name__).addHandler(logging.NullHandler())

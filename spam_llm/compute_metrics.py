@@ -1,3 +1,10 @@
+"""
+File: ./spam_llm/compute_metrics.py
+Author: Jon Downs
+Date: 5/24/2024
+Description: Model evaluation function for validation step. Direct copy of examples in HuggingFace documentation for sequence classification.
+"""
+
 import evaluate
 import numpy as np
 
