@@ -5,7 +5,7 @@
 
 # Model configuration settings
 base_model: 'facebookAI/roberta-base'
-model_output_dir: 'roberta_base'
+model_output_dir: './checkpoints/roberta_base'
 num_train_epochs: 10
 weight_decay: 0.01
 learning_rate: 2e-5
