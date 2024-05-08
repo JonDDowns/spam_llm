@@ -1,0 +1,24 @@
+# File: config.yaml
+# Author: Jon Downs
+# Date: 5/24/2024
+# Desciption: Config for spam_llm project
+
+# Model configuration settings
+base_model: 'facebookAI/roberta-base'
+model_output_dir: 'roberta_base'
+num_train_epochs: 10
+weight_decay: 0.01
+learning_rate: 2e-5
+per_device_train_batch_size: 16
+per_device_eval_batch_size: 16
+gradient_accumulation_steps: 1
+
+# Root directory of your Thunderbird Profile.
+tbird_profile_dir: "/my/.thunderbird/abc123.default/Mail/"
+
+# Paths to individual mailbox files to be parsed, using tbird_profile_dir as a base
+# Will be saved to data/raw in same nested structure relative to tbird_profile_dir
+mailbox_folders:
+  - Junk
+  - Gmail.sbd/2011
+  - MyFolder/MyMboxFile
